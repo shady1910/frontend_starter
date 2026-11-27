@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Starter – Eine klare Basis für deine Website</title>
+    <meta
+      name="description"
+      content="Ein schlanker Frontend-Starter für statische Websites mit HTML, Tailwind CSS und JavaScript."
+    />
+    <meta name="robots" content="noindex, follow" />
+    <meta property="og:title" content="Frontend Starter – Eine klare Basis für deine Website" />
+    <meta
+      property="og:description"
+      content="Ein schlanker Frontend-Starter für statische Websites mit HTML, Tailwind CSS und JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <!-- Vor Veröffentlichung Canonical-URL, og:url und og:image mit echten URLs ergänzen. -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/css/main.css" />
+    <script type="module" src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+    <header id="seitenanfang" class="border-b border-line">
+      <nav class="page-width site-nav" aria-label="Hauptnavigation" data-navigation>
+        <a href="#seitenanfang" class="wordmark">frontend-starter</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          hidden
+          aria-controls="hauptmenue"
+          data-menu-button
+        >
+          Menü
+        </button>
+        <ul id="hauptmenue" class="site-links">
+          <li><a href="#konzept">Konzept</a></li>
+          <li><a href="#bausteine">Bausteine</a></li>
+          <li><a href="#einstieg">Einstieg</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="inhalt" tabindex="-1">
+      <section class="hero border-b border-line" aria-labelledby="hero-titel">
+        <div class="hero-copy">
+          <h1 id="hero-titel">Eine klare Basis für deine Website.</h1>
+          <p class="mt-5 max-w-prose text-intro">
+            Ein minimaler, moderner Frontend-Starter für statische Websites – schlank, übersichtlich
+            und direkt startklar.
+          </p>
+          <a class="button mt-6" href="#konzept">Projekt entdecken</a>
+        </div>
+        <img
+          class="hero-image"
+          src="/src/assets/images/optimized/hero.webp"
+          alt="Grüner Bogen, gefaltete Fläche, orangefarbene Kugel und heller Würfel im Seitenlicht"
+          width="1402"
+          height="1122"
+          fetchpriority="high"
+        />
+      </section>
+      <section
+        id="konzept"
+        class="bg-paper py-section"
+        aria-labelledby="konzept-titel"
+        tabindex="-1"
+      >
+        <div class="page-width grid items-start gap-4 md:grid-cols-2 md:gap-8">
+          <h2 id="konzept-titel">Schlank im Aufbau.</h2>
+          <p class="max-w-prose text-intro">
+            Ein reduziertes Setup mit klarer Struktur, das sich leicht verstehen, erweitern und an
+            dein Projekt anpassen lässt.
+          </p>
+        </div>
+      </section>
+      <section
+        id="bausteine"
+        class="bg-secondary py-section"
+        aria-labelledby="bausteine-titel"
+        tabindex="-1"
+      >
+        <div class="page-width">
+          <h2 id="bausteine-titel">Die Bausteine</h2>
+          <ul class="feature-list mt-6 grid gap-7 md:grid-cols-3">
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor">
+                <path d="m12 12-8 8 8 8m16-16 8 8-8 8M24 8l-8 24" />
+              </svg>
+              <div>
+                <h3>HTML</h3>
+                <p>Eine klare Struktur für semantische und zugängliche Inhalte.</p>
+              </div>
+            </li>
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor">
+                <path d="M4 16q8-8 16 0t16 0M4 24q8-8 16 0t16 0" />
+              </svg>
+              <div>
+                <h3>Tailwind CSS</h3>
+                <p>Utility-Klassen und zentrale Design-Tokens für ein konsistentes Layout.</p>
+              </div>
+            </li>
+            <li>
+              <svg aria-hidden="true" viewBox="0 0 40 40" fill="none" stroke="currentColor">
+                <rect x="5" y="5" width="30" height="30" rx="3" />
+                <path d="m13 22 5 5 9-12" />
+              </svg>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Eigenständige Module ergänzen die Seite um gezielte Interaktionen.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="einstieg"
+        class="bg-primary py-section text-canvas"
+        aria-labelledby="einstieg-titel"
+        tabindex="-1"
+      >
+        <div class="page-width flex flex-wrap items-center justify-between gap-5">
+          <h2 id="einstieg-titel">Bereit für dein Projekt?</h2>
+          <a class="button button-light" href="#seitenanfang">Zum Seitenanfang</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-width py-5 text-sm font-semibold">frontend-starter</footer>
+  </body>
+</html>

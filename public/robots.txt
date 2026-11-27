@@ -1,0 +1,3 @@
+# Der Meta-Tag noindex auf der Beispielseite bleibt für Crawler lesbar.
+User-agent: *
+Disallow:

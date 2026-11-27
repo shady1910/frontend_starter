@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+playwright-report/
+test-results/
+.image-optimization-cache.json
+.image-opt-*.tmp
+*.tmp
+*.log
+package-lock.json
+src/assets/images/
+src/assets/fonts/
+**/*.{jpg,jpeg,png,webp,gif,avif,svg,ico,JPG,JPEG,PNG,WEBP,GIF,AVIF,SVG,ICO}

@@ -1,0 +1,51 @@
+{
+  "name": "frontend-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Statische Single-Page-Websites mit Vite, Tailwind CSS und Vanilla JavaScript.",
+  "engines": {
+    "node": "^22.16.0 || ^24.0.0 || ^26.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "lint:js": "eslint . --max-warnings 0",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:html": "htmlhint --config .htmlhintrc index.html",
+    "lint:fix": "eslint . --fix --max-warnings 0 && stylelint \"src/**/*.css\" --fix && npm run lint:html",
+    "test:a11y": "playwright test",
+    "images:optimize": "node scripts/optimize-images.js",
+    "check": "npm run format:check && npm run lint && npm run test:a11y",
+    "clean": "node scripts/clean.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
+    "@tailwindcss/vite": "^4.3.5",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.9",
+    "globals": "^17.14.0",
+    "htmlhint": "^1.9.2",
+    "prettier": "^3.10.1",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "sharp": "^0.35.5",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.4.0"
+  },
+  "overrides": {
+    "htmlhint": {
+      "glob": {
+        ".": "^14.0.2",
+        "minimatch": "^11.0.1"
+      }
+    }
+  }
+}

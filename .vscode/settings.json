@@ -1,0 +1,35 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "search.exclude": {
+    "**/dist": true,
+    "**/playwright-report": true,
+    "**/test-results": true
+  },
+  "prettier.requireConfig": true,
+  "prettier.documentSelectors": ["**/src/css/main.css"],
+  "eslint.validate": ["javascript"],
+  "stylelint.validate": ["css", "tailwindcss"],
+  "htmlhint.configFile": ".htmlhintrc",
+  "tailwindCSS.experimental.configFile": "src/css/main.css",
+  "files.associations": {
+    ".htmlhintrc": "json",
+    "**/src/css/main.css": "tailwindcss"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
