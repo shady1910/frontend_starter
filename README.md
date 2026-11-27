@@ -219,8 +219,9 @@ npm run build
 npm run preview
 ```
 
-Vite bündelt und minifiziert CSS und JavaScript. Verarbeitete Assets erhalten Dateinamen mit
-Hashes. Dateien aus `public/` werden mit ihren festen Namen kopiert. Lade den **Inhalt von
+Vite bündelt und minifiziert CSS und JavaScript. Das Stylesheet liegt unter `dist/assets/styles.css`.
+JavaScript und andere verarbeitete Assets erhalten Dateinamen mit Hashes. Dateien aus `public/`
+werden mit ihren festen Namen kopiert. Lade den **Inhalt von
 `dist/`** per Hosting-Dateimanager, SFTP oder deinem Deployment-Workflow auf den Webserver.
 Der Zielordner muss `index.html` als Indexdatei ausliefern. Hosts können die Dateitypen aus den
 Endungen ableiten. Die Site benötigt weder Node.js auf dem Server noch Routing-Rewrites.
